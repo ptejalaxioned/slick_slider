@@ -53,7 +53,6 @@ strong {
 em { font-style: italic; }
 
 img {
-  width: 100%;
   border: 0;
   vertical-align: middle;
 }
@@ -115,7 +114,41 @@ li {
 /*=================================
   main styling starts here
 =================================*/
+.slick-prev:before, .slick-next:before {
+  color: black;
+}
 
+.slide-arrow{
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+}
+
+.slider-container{
+  position: relative;
+} 
+
+.custom-prev-arrow, .custom-next-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.5);
+  border: none;
+  color: white;
+  font-size: 31px;
+  padding: 0px 8px 9px;
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 24px;
+}
+
+.custom-prev-arrow {
+  left: 10px;
+}
+
+.custom-next-arrow {
+  right: 10px;
+}
 /*=================================
   main styling ends here
 =================================*/
